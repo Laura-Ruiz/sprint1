@@ -153,28 +153,18 @@ a:hover {
     display: grid;
     grid-gap: 15px;
     padding: 10px;
-    /* background-color: white; */
 }
 
 .section {
     background-color: rgb(153, 153, 149);
-    
-    /* padding: 10px; */
-    /* display: grid;
-    
-    grid-gap:15px;
-    grid-template-columns: repeat(2,1fr); */
 } 
 
-/* .articulos{
-    background-color: white;
-    padding: 10px;
-} */
 article{
     background-color: white;
     padding: 10px;
     animation: moverIzquierda 1s ease-in;
 }
+
 .div__articulos-imagen{
     position: relative;
 }

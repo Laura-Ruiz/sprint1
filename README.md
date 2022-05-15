@@ -2,4 +2,4 @@
 
 #### Description:
 
-    Proyecto maquetación responsive
+    Proyecto maquetación responsive con Flexbox y Grid Layout
