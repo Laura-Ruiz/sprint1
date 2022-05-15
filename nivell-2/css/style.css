@@ -1,0 +1,280 @@
+
+.container{
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    max-width:1200px;
+    min-width: min-content;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-image: url("../images/header.jpg");
+    background-size: 110%;
+    background-position: center;
+    height: 290px;
+}
+
+.header__principal{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    padding-top: 25px;
+    gap:20px; 
+    justify-content: space-between;
+}
+
+.header__logo{
+    padding: 10px;
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.header__busqueda{
+    flex-grow: 3;
+    display: flex;
+    justify-content: space-evenly;
+    
+} 
+
+a{
+    color: rgb(129, 116, 116);
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 200;
+}
+
+a:hover {
+    color: black;
+}
+
+.icono{
+    background-image: url("../images/iconos_16.png");
+    padding-right: 10px;
+    padding-left: 10px;
+    background-repeat: no-repeat;
+}
+
+.logo-casa{
+    background-position: 0px -40px;
+}
+.logo-casa:hover{
+    background-position: 0px 0px;
+}
+
+.logo-rutas{
+    background-position: -40px -40px;
+}
+.logo-rutas:hover{
+    background-position: -40px 0px;
+}
+
+.logo-hotel{
+    background-position: -80px -40px;
+}
+.logo-hotel:hover{
+    background-position: -80px 0px;
+}
+
+.logo-vuelos{
+    background-position: -120px -40px;
+}
+.logo-vuelos:hover{
+    background-position: -120px 0px;
+} 
+
+.logo-contactos{
+    background-position: -160px -40px;
+}
+.logo-contactos:hover{
+    background-position: -160px 0px;
+} 
+
+
+.logo-Fb{
+    background-position: -200px -40px;
+    padding-left: 20px;
+}
+.logo-Fb:hover{
+    background-position: -200px 0px;
+    padding-left: 20px;
+}
+
+.logo-Tw{
+    background-position: -240px -40px;
+}
+.logo-Tw:hover{
+    background-position: -240px 0px;
+}
+
+.header__contactos{
+    padding: 10px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+           
+} 
+
+.header__secundario{
+    background-color: gainsboro;
+    opacity: 0.5;
+    padding-bottom: 19px;
+    padding-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.header__titulo {
+    color: rgb(231, 117, 40);
+    text-align: center;
+    font-size: 1.5em; 
+    font-family:serif
+}
+
+.section {
+    display: flex;
+    padding: 0px;
+    gap:10px;
+}
+
+.section__articulos{
+    background-color: rgb(232, 229, 229);
+    flex-grow: 2;
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.section__primera {
+    display: flex;
+    gap:15px;
+}
+
+.articulos{
+    background-color: white;
+    flex-grow: 1;
+    padding: 10px;
+    width: min-content;
+}
+
+.div__articulos-imagen{
+    position: relative;
+}
+
+.imagen__articulos{
+    height: 220px;
+    width: 400px;
+        
+}
+
+.fecha__imagen{
+    position: absolute;
+    color: rgb(254, 220, 83);
+    bottom: 10px;
+    left: 5px;
+}
+
+.titulo_imagen{
+    background-color: rgb(241, 137, 137);
+    padding: 10px;
+    font-size: medium;
+    color: white;
+    padding-bottom: 0;
+    margin: 0;   
+}
+
+.descripcion_imagen{
+    column-count:2;
+    column-gap:15px;
+}
+
+.section__segunda {
+    display: flex;
+    gap:15px;
+}
+
+.section__articulo-3, .section__articulo-4{
+    background-color: white;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.section__parrafo{
+    text-align: center;
+    margin: 0;
+}
+
+.section__aside{
+    background-color: rgb(232, 229, 229);
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+           
+}
+
+.section__anuncio-1{
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+
+} 
+.section__anuncio-2{
+    padding: 10px;
+    text-align: center;
+}
+
+.footer{
+    background-color:rgb(151, 151, 151); 
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.footer__info{
+    background-color: rgb(232, 229, 229);
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+
+@media (min-width: 481px) and (max-width: 767px){
+    .section{
+        display: flex;
+        flex-flow: column;
+    }
+} 
+
+@media (min-width: 320px) and (max-width: 480px){
+    .section{
+        display: flex;
+        flex-flow: column;
+        
+    }
+    .section__primera, .section__segunda{
+        display: flex; 
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .header__principal{
+        padding: 0;
+        
+    }
+    .header__busqueda{
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .header__secundario{
+        padding: 0;
+        margin-top: auto;
+    }
+}
